@@ -1,0 +1,46 @@
+<% include header %>
+
+<% include addbutton %>
+
+    <% if (entries.length) { %>
+        <hr>
+
+        <% entries.forEach( (entry) => { %>
+
+            <div class="row">
+                <div class="col-lg-3">
+                    <img src="images/batch-200/<%= entry.omakuva %>-200.png" class="avatar" alt="<%= entry.omanimi  %>">
+                </div>
+                <div class="col-lg-9">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h2>
+                                <%= entry.title %>
+                            </h2>
+                            <p class="text-muted tiny">
+                                <i>
+                                    <%= entry.omanimi %>,
+                                        <%= entry.published %>
+                                </i>
+                            </p>
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                <%= entry.content %>
+                            </p>
+                             <p>
+                                Sanoisin Rikun yliopisto-opiskeluvuosien lukumäärän olevan: <u> <b><%= entry.arvaus %></b></u>.
+                            </p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <% }) %>
+                <% } else { %>
+    
+                    
+                    <br>
+                    <% } %>
+                        <% include footer %>

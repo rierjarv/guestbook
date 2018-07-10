@@ -1,0 +1,133 @@
+<% include header %>
+
+    <br>
+
+
+    <form method="post" role="form">
+        <h2>Valitse yksi hahmo seuraavista: </h2>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-xs">
+                    <label class="btn">
+                        <img src="images/batch-200/panda-200.png" alt="..." class="img-thumbnail img-check semi-avatar">
+                        <input type="radio" class="form-control" name="omakuva" id="panda" value="panda" class="hidden" autocomplete="off">
+                    </label>
+                </div>
+                <div class="col-xs">
+                    <label class="btn">
+                        <img src="images/batch-200/bird-200.png" alt="..." class="img-thumbnail img-check semi-avatar">
+                        <input type="radio" class="form-control" name="omakuva" id="bird" value="bird" class="hidden" autocomplete="off">
+                    </label>
+                </div>
+                <div class="col-xs">
+                    <label class="btn">
+                        <img src="images/batch-200/tiger-200.png" alt="..." class="img-thumbnail img-check semi-avatar">
+                        <input type="radio" class="form-control" name="omakuva" id="tiger" value="tiger" class="hidden" autocomplete="off">
+                    </label>
+                </div>
+                <div class="col-xs">
+                    <label class="btn">
+                        <img src="images/batch-200/gorilla-200.png" alt="..." class="img-thumbnail img-check semi-avatar">
+                        <input type="radio" class="form-control" name="omakuva" id="gorilla" value="gorilla" class="hidden" autocomplete="off">
+                    </label>
+                </div>
+                <div class="col-xs">
+                    <label class="btn">
+                        <img src="images/batch-200/hamsteri-200.png" alt="..." class="img-thumbnail img-check semi-avatar">
+                        <input type="radio" class="form-control" name="omakuva" id="hamsteri" value="hamsteri" class="hidden" autocomplete="off">
+                    </label>
+                </div>
+                <div class="col-xs">
+                    <label class="btn">
+                        <img src="images/batch-200/chimeria-200.png" alt="..." class="img-thumbnail img-check semi-avatar">
+                        <input type="radio" class="form-control" name="omakuva" id="chimeria" value="chimeria" class="hidden" autocomplete="off">
+                    </label>
+                </div>
+                <div class="col-xs">
+                    <label class="btn">
+                        <img src="images/batch-200/dove-200.png" alt="..." class="img-thumbnail img-check semi-avatar">
+                        <input type="radio" class="form-control" name="omakuva" id="dove" value="dove" class="hidden" autocomplete="off">
+                    </label>
+                </div>
+                <div class="col-xs">
+                    <label class="btn">
+                        <img src="images/batch-200/shark-200.png" alt="..." class="img-thumbnail img-check semi-avatar">
+                        <input type="radio" class="form-control" name="omakuva" id="shark" value="shark" class="hidden" autocomplete="off">
+                    </label>
+                </div>
+                <div class="col-xs">
+                    <label class="btn">
+                        <img src="images/batch-200/leopard-200.png" alt="..." class="img-thumbnail img-check semi-avatar">
+                        <input type="radio" class="form-control" name="omakuva" id="leopard" value="leopard" class="hidden" autocomplete="off">
+                    </label>
+                </div>
+                <div class="col-xs">
+                    <label class="btn">
+                        <img src="images/batch-200/horse-200.png" alt="..." class="img-thumbnail img-check semi-avatar">
+                        <input type="radio" class="form-control" name="omakuva" id="horse" value="horse" class="hidden" autocomplete="off">
+                    </label>
+                </div>
+                <div class="col-xs">
+                    <label class="btn">
+                        <img src="images/batch-200/dinosaur-200.png" alt="..." class="img-thumbnail img-check semi-avatar">
+                        <input type="radio" class="form-control" name="omakuva" id="dinosaur" value="dinosaur" class="hidden" autocomplete="off">
+                    </label>
+                </div>
+                <div class="col-xs">
+                    <label class="btn">
+                        <img src="images/batch-200/dog-200.png" alt="..." class="img-thumbnail img-check semi-avatar">
+                        <input type="radio" class="form-control" name="omakuva" id="dog" value="dog" class="hidden" autocomplete="off">
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="omanimiPrep">
+                        <i class="fa fa-user"></i>
+                    </span>
+                </div>
+                <input type="text" class="form-control" id="omanimi" name="omanimi" placeholder="Oma nimi tähän" aria-label="omanimi" aria-describedby="omanimi"
+                    required>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="titlePrep">
+                        <i class="fa fa-glasses"></i>
+                    </span>
+                </div>
+                <input type="text" class="form-control" id="title" name="title" placeholder="Sellanen mukava otsikko" aria-label="title"
+                    aria-describedby="title" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fa fa-comment"></i>
+                    </span>
+                </div>
+                <textarea class="form-control" id="body" name="body" placeholder="Mikä fiilis ATM? Tähän lause tai pari, tai ytimekkäästi yhdellä sanalla."
+                rows="3" required aria-label="Teksti"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="titlePrep">
+                        <i class="fas fa-user-graduate"></i>
+                    </span>
+                </div>
+                <input type="text" class="form-control" id="arvaus" name="arvaus" placeholder="Riku opiskeli N vuotta, N=?" aria-label="arvaus"
+                    aria-describedby="arvaus" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Tallenna vieraskirjaan" class="btn btn-info text-white">
+        </div>
+    </form>
+
+    <% include footer %>
