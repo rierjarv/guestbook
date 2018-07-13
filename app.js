@@ -3,9 +3,11 @@ var path = require('path');
 var express = require('express');
 var bodyParser = require('body-parser');
 var morgan = require('morgan');
+const PORT = process.env.PORT || 5000 
 
 var app = express();
 
+app.use(express.static(__dirname + '/public'));
 app.set("views", path.resolve(__dirname, "views"));
 app.set("view engine", "ejs");
 
@@ -16,8 +18,6 @@ app.locals.entries = entries;
 app.use(morgan("dev"));
 
 app.use(bodyParser.urlencoded({ extended: false }));
-
-app.use(express.static(__dirname + '/public'));
 
 
 // ROUTES 
@@ -37,11 +37,11 @@ app.post("/new-entry", (req, res) => {
     }
     entries.push({
         title: req.body.title,
-        omanimi: req.body.omanimi,
         content: req.body.body,
+        omanimi: req.body.omanimi,
         omakuva: req.body.omakuva,
-        arvaus: req.body.arvaus,
         published: new Date().toLocaleString()
+        // arvaus: req.body.arvaus,
     });
     res.redirect("/");
 });
@@ -50,6 +50,6 @@ app.use((req, res) => {
     res.status(404).render("404");
 });
 
-http.createServer(app).listen(3000, () => {
-    console.log("Vieraskirja käynnissä portissa 3000");
-})
+app.listen(PORT, () => {
+    console.log("Vieraskirja portissa ${PORT}");
+});

@@ -2,21 +2,32 @@
 
     <br>
 
-
     <form method="post" role="form">
-        <h2>Valitse yksi hahmo seuraavista: </h2>
+        <h2>Ootko lintu vai kala? Valkkaa oma hahmo <i class="far fa-smile"></i></h2>
         <div class="form-group">
             <div class="row">
                 <div class="col-xs">
                     <label class="btn">
                         <img src="images/batch-200/panda-200.png" alt="..." class="img-thumbnail img-check semi-avatar">
-                        <input type="radio" class="form-control" name="omakuva" id="panda" value="panda" class="hidden" autocomplete="off">
+                        <input type="radio" class="form-control" name="omakuva" id="panda" value="panda" class="hidden" autocomplete="off" required>
+                    </label>
+                </div>
+                <div class="col-xs">
+                    <label class="btn">
+                        <img src="images/batch-200/frog-200.png" alt="..." class="img-thumbnail img-check semi-avatar">
+                        <input type="radio" class="form-control" name="omakuva" id="frog" value="frog" class="hidden" autocomplete="off" required>
                     </label>
                 </div>
                 <div class="col-xs">
                     <label class="btn">
                         <img src="images/batch-200/bird-200.png" alt="..." class="img-thumbnail img-check semi-avatar">
                         <input type="radio" class="form-control" name="omakuva" id="bird" value="bird" class="hidden" autocomplete="off">
+                    </label>
+                </div>
+                <div class="col-xs">
+                    <label class="btn">
+                        <img src="images/batch-200/chicken-200.png" alt="..." class="img-thumbnail img-check semi-avatar">
+                        <input type="radio" class="form-control" name="omakuva" id="chicken" value="chicken" class="hidden" autocomplete="off">
                     </label>
                 </div>
                 <div class="col-xs">
@@ -69,6 +80,12 @@
                 </div>
                 <div class="col-xs">
                     <label class="btn">
+                        <img src="images/batch-200/flamingo-200.png" alt="..." class="img-thumbnail img-check semi-avatar">
+                        <input type="radio" class="form-control" name="omakuva" id="flamingo" value="flamingo" class="hidden" autocomplete="off">
+                    </label>
+                </div>
+                <div class="col-xs">
+                    <label class="btn">
                         <img src="images/batch-200/dinosaur-200.png" alt="..." class="img-thumbnail img-check semi-avatar">
                         <input type="radio" class="form-control" name="omakuva" id="dinosaur" value="dinosaur" class="hidden" autocomplete="off">
                     </label>
@@ -79,6 +96,13 @@
                         <input type="radio" class="form-control" name="omakuva" id="dog" value="dog" class="hidden" autocomplete="off">
                     </label>
                 </div>
+                <div class="col-xs">
+                    <label class="btn">
+                        <img src="images/batch-200/mouse-200.png" alt="..." class="img-thumbnail img-check semi-avatar">
+                        <input type="radio" class="form-control" name="omakuva" id="mouse" value="mouse" class="hidden" autocomplete="off" required>
+                    </label>
+                </div>
+
             </div>
         </div>
         <div class="form-group">
@@ -88,8 +112,8 @@
                         <i class="fa fa-user"></i>
                     </span>
                 </div>
-                <input type="text" class="form-control" id="omanimi" name="omanimi" placeholder="Oma nimi tähän" aria-label="omanimi" aria-describedby="omanimi"
-                    required>
+                <input type="text" class="form-control" id="omanimi" name="omanimi" placeholder="Oma nimi tai nimimerkki" aria-label="omanimi"
+                    aria-describedby="omanimi" required>
             </div>
         </div>
         <div class="form-group">
@@ -99,7 +123,7 @@
                         <i class="fa fa-glasses"></i>
                     </span>
                 </div>
-                <input type="text" class="form-control" id="title" name="title" placeholder="Sellanen mukava otsikko" aria-label="title"
+                <input type="text" class="form-control" id="title" name="title" placeholder="Sellanen muikea otsikko" aria-label="title"
                     aria-describedby="title" required>
             </div>
         </div>
@@ -110,11 +134,11 @@
                         <i class="fa fa-comment"></i>
                     </span>
                 </div>
-                <textarea class="form-control" id="body" name="body" placeholder="Mikä fiilis ATM? Tähän lause tai pari, tai ytimekkäästi yhdellä sanalla."
-                rows="3" required aria-label="Teksti"></textarea>
+                <textarea class="form-control" id="body" name="body" placeholder="Kuinka kauan Riku opiskeli yliopistossa? Kirjota tähän oma arvaus tai tieto. Ja kerro toki sanalla parilla, mikä fiilis tällä hetkellä bileissä!"
+                    rows="6" required aria-label="Teksti"></textarea>
             </div>
         </div>
-        <div class="form-group">
+        <!-- <div class="form-group">
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="titlePrep">
@@ -124,7 +148,7 @@
                 <input type="text" class="form-control" id="arvaus" name="arvaus" placeholder="Riku opiskeli N vuotta, N=?" aria-label="arvaus"
                     aria-describedby="arvaus" required>
             </div>
-        </div>
+        </div> -->
         <div class="form-group">
             <input type="submit" value="Tallenna vieraskirjaan" class="btn btn-info text-white">
         </div>
